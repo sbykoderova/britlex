@@ -1,0 +1,122 @@
+.about {
+    padding-bottom: 150px;
+
+    @media (max-width: 992px) {
+        padding-bottom: 100px;
+    }
+
+    @media (max-width: 768px) {
+        padding-bottom: 90px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 650px) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+
+    &__content {
+        width: 635px;
+
+        @media (max-width: 768px) {
+            width: 540px;
+        }
+
+        @media (max-width: 650px) {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        text-align: left;
+        margin-bottom: 20px;
+
+        @media (max-width: 650px) {
+            text-align: center;
+        }
+    }
+
+    &__descr {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #8F95A5;
+        margin-bottom: 45px;
+
+        @media (max-width: 992px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 550px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__count {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+
+        @media (max-width: 992px) {
+            gap: 50px;
+        }
+
+        @media (max-width: 768px) {
+            align-items: flex-start;
+        }
+
+        @media (max-width: 650px) {
+            justify-content: space-around;
+        }
+
+        @media (max-width: 550px) {
+            gap: 25px;
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: #8F95A5;
+
+            @media (max-width: 992px) {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 13px;
+                line-height: 20px;
+            }
+
+            span {
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 80px;
+                color: #2A3246;
+
+                @media (max-width: 992px) {
+                    font-size: 30px;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}

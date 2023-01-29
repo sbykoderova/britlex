@@ -1,0 +1,103 @@
+.footer {
+    padding-bottom: 60px;
+
+    @media (max-width: 992px) {
+        padding-bottom: 45px;
+    }
+
+    @media (max-width: 768px) {
+        padding-bottom: 30px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 550px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+
+    &__logo {
+        @media (max-width: 992px) {
+            width: 89px;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            width: 75px;
+        }
+    }
+
+    &__nav {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+        color: #8F95A5;
+
+        @media (max-width: 992px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        @media (max-width: 550px) {
+            font-size: 11px;
+        }
+
+        &-list {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            @media (max-width: 550px) {
+                gap: 15px;
+            }
+        }
+
+        &-item {
+            transition: color 0.3s ease-out;
+
+            &:hover {
+                color: #44474e;
+            }
+        }
+
+        &-item:not(:first-child) {
+            position: relative;
+
+            &::before {
+                content: '';
+                display: block;
+                background: #8F95A5;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                position: absolute;
+                left: -18px;
+                top: 15px;
+
+                @media (max-width: 992px) {
+                    top: 11px;
+                }
+
+                @media (max-width: 768px) {
+                    top: 7px;
+                }
+
+                @media (max-width: 550px) {
+                    width: 4px;
+                    height: 4px;
+                    left: -10px;
+                }
+            }
+        }
+    }
+}
