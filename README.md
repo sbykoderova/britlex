@@ -1,2 +1,2 @@
-# Landing page "Сайт по продаже недвижимости"
+# Landing page "Britlex - Learn Language"
 ### Демо: https://sbykoderova.github.io/britlex/
